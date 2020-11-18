@@ -6,10 +6,7 @@ void reverse(char *str)
     char tmp;
 
     // Get end of string pointer
-    while (*end) // True as long as *end isn't NULL 
-    {
-        end++;
-    }
+    while (*end) end++;// True as long as *end isn't NULL 
     end--; // address just before NULL character
 
     while (str < end)
